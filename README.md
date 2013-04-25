@@ -3,13 +3,14 @@ Provision OpenVPN accounts easily.
 
 This script will provision OpenVPN accounts for your users with just one command.
 
-## Requirements
-
-OpenVPN and Easy-RSA 2.0
-
 ## What is actually does?
 
-It generates a username.ovpn file with CA CRT, user CRT and key bundled inside. Then it creates a username.tblk directory on top of it and then make a .tgz archive out of it. Tunnelblick user will only have to unpack this file and doubleclick on username.tblk.
+1. Generates a username.ovpn file with all required certificates bundled inside.
+2. Puts .ovpn file into username.tblk directory
+3. Makes .tgz archive out of it.
+
+Tunnelblick user will only have to unpack .tgz file and doubleclick on username.tblk to add a VPN connection. Windows users will still have .ovpn file.
+
 
 ## Usage
 
@@ -39,4 +40,8 @@ Reprovisioning configuration for users who already have certificates in Easy-RSA
 Looks like CRT file for john.doe already exists. Do you want to use it? [Y/n]
 [ OK ]		Generated ./output/john.doe.tgz
 ```
+
+## Requirements
+
+OpenVPN and Easy-RSA 2.0
 
