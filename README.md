@@ -45,3 +45,11 @@ Looks like CRT file for john.doe already exists. Do you want to use it? [Y/n]
 
 OpenVPN and Easy-RSA 2.0
 
+## Installation
+
+Few guidelines:
+
+1. You can put this tool anywhere you want and run it from there.
+2. It's prepared to work on Debian with OpenVPN installed and Easy-RSA present in /etc/openvpn/easy-rsa/2.0. If your setup is different, you can change paths in create_user.conf file.
+3. You would need root privileges to access Easy-RSA commands.
+4. 
